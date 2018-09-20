@@ -24,7 +24,7 @@ console.log([healthy, indulgent])
 console.log([scramble, whitepizza])
 console.log([tofu, spinach, egg, pizzadough])
 
-Meal.deleteMany()
+Week.deleteMany()
     .then(() => {
         return Week.insertMany([healthy, indulgent])
     })
