@@ -1,6 +1,8 @@
-{{Title}}
-    <div>Choose A Week!</div>
-    <p>Week 1</p>
-    <p>Week 2</p>
-
-<p>Week Index Page!</p>
+<div>
+    What Kind of Week Is It?
+</div>
+<div>
+    {{#each week}}
+    <div>{{this.name}}</div>
+    {{/each}}
+</div>
