@@ -3,6 +3,7 @@
 <div>
     {{#each week.meals}}
        {{this.name}}
+       <a href='/weeks/{{this._id}}/edit'>Edit this Meal</a>
     {{/each}}
 </div>
 
