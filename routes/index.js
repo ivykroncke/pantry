@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var router = express.Router()
+const { Week } = require('../db/schema')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send('The index page is connected!')
-  res.render('index', { title: 'Express' });
-});
+router.get('/', (req, res) => {
+  res.redirect('/weeks')
+})
 
-module.exports = router;
+module.exports = router
