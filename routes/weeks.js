@@ -48,5 +48,11 @@ router.put('/:id', (req, res) => {
 })
 
 //DELETE
+router.delete('/:id', (req, res) => {
+  Week.findByIdAndRemove(req.params.id)
+  .then(() => {
+    res.redirect('/weeks')
+  })
+})
 
 module.exports = router

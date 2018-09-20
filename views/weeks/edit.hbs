@@ -1,7 +1,13 @@
 <h1>Edit {{week.name}}</h1>
-
+<br>
 <form action='/weeks/{{week._id}}?_method=PUT' method='POST'>
 <div>Name: <input type='text' name='name' value='{{week.name}}'></div>
 <div>Image: <input type='text' name='img' value='{{week.img}}'></div>
 <div><input type='submit' value='Update Week'></div>
 </form>
+<br>
+<form action='/weeks/{{week._id}}?_method=DELETE' method='POST'>
+<div><input type='submit' value='DELETE this Week'></div>
+</form>
+<br>
+<a href='/weeks/'>Back to Main</a>
