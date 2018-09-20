@@ -1,8 +1,15 @@
 <div>
     What Kind of Week Is It?
 </div>
+<br>
 <div>
     {{#each week}}
-    <div>{{this.name}}</div>
+    <div>
+        <div>{{this.name}}</div>
+        <a src='#' href='/weeks/{{this._id}}'>View Meals</a>
+    </div>
+    <br>
     {{/each}}
 </div>
+<br>
+<div>Add a New Meal</div>
