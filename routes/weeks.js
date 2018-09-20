@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
 
 //EDIT, RENDER EDIT FORM
 router.get('/:id/edit', (req, res) => {
-  Week.findById(req.param.id)
+  Week.findById(req.params.id)
     .then(week => {
       res.render('weeks/edit', { week })
     })
@@ -40,7 +40,12 @@ router.post('/', (req, res) => {
 })
 
 //UPDATE
-
+router.put('/:id', (req, res) => {
+  Week.findByIdAndUpdate(req.params.id, req.body)
+  .then(week => {
+    res.redirect(`/weeks/${week._id}`)
+  })
+})
 
 //DELETE
 
