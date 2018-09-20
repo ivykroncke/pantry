@@ -1,31 +1,30 @@
 const mongoose = require('mongoose')
-const SChema = mongoose.Schema
+const Schema = mongoose.Schema
 
-//itemSchema
 const ItemSchema = new Schema({
     name: String,
-    quantity: String
+    quantity: Number,
+    unit: String
 })
 
-//mealSchema
 const MealSchema = new Schema({
     name: String,
     description: String,
-    items: []
+    items: [ItemSchema]
 })
 
-//weekSchema
 const WeekSchema = new Schema({
     name: String,
-    img: [], //an array of images to choose from...
-    description: String,
+    img: String,
     meals: [MealSchema]
 })
 
-
-
+const ItemModel = mongoose.model('Item', ItemSchema)
+const MealModel = mongoose.model('Meal', MealSchema)
 const WeekModel = mongoose.model('Week', WeekSchema)
 
 module.exports = {
+    Item: ItemModel,
+    Meal: MealModel,
     Week: WeekModel
 }
