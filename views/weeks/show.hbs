@@ -1,15 +1,17 @@
 <h1>{{week.name}}</h1>
- <a href='/weeks/{{week._id}}/edit'>Edit this Week</a>
+ <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
 <br>
 <div>
     {{#each week.meals}}
        {{this.name}}
-       {{!-- <a href='/weeks/{{this._id}}/edit'>Edit this Meal</a> --}}
+       <a href='/weeks/{{this._id}}/meals/{{meal._id}}'>View this Meal</a>
     {{/each}}
 </div>
+<br>
 <div>
     Add a Meal+
 </div>
+<br>
 <div>
     <a href='/weeks'>Back to Main</a>
 </div>

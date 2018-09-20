@@ -11,6 +11,7 @@ var methodOverride = require('method-override')
 
 var indexRouter = require('./routes/index');
 var weeksRouter = require('./routes/weeks');
+var mealsRouter = require('./routes/meals')
 
 var app = express();
 
@@ -26,8 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-// app.use for Weeks 
 app.use('/weeks', weeksRouter);
+app.use('/meals', mealsRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
