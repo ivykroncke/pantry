@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  img {
+      
+  }
+}
+
+/*
