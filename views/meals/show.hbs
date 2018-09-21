@@ -1,6 +1,11 @@
 
 <h1>Meal: {{meal.name}}</h1>
 <p> Ingredients here!</p>
+<div>
+    {{#each meal.items}}
+        <div>{{this.quantity}} {{this.unit}} - {{this.name}}</div>
+    {{/each}}
+</div>
 <br>
 <div>
 {{!-- {{#each meal.item}}
