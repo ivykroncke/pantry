@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
             return week.save()
         })
         .then(week => {
-            res.send(week)
+            res.redirect(`/weeks/${req.params.weeksId}/meals/${req.params.mealsId}`)
         })
 })
 
