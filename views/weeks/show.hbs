@@ -4,7 +4,7 @@
 <div>
     {{#each week.meals}}
        {{this.name}}
-       <a href='/weeks/{{this._id}}/meals/{{this._id}}'>View this Meal</a>
+       <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</a>
     {{/each}}
 </div>
 <br>

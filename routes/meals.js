@@ -4,11 +4,12 @@ const { Week, Meal } = require('../db/schema')
 
 //Show This Meal
 router.get('/:id', (req, res) => {
+
     Week.findById(req.params.weeksId)
         .then(week => {
             res.render('meals/show', { 
-               weeksId: req.params.weeksId,
-            //    meal: week.meals.id(req.params.id)
+                mealId: req.params.id,
+                meal: week.meals.id(req.params.id)
             })
         }) 
 })
