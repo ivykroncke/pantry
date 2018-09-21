@@ -1,16 +1,20 @@
 const express = require('express')
 const router = express.Router({ mergeParams: true })
-const { Week } = require('../db/schema')
+const { Week, Meal, Item } = require('../db/schema')
 
-router.get('/', (req, res) => {
-    res.send('new route!')
-    // Week.findById(req.params.weeksId)
-    //     .then(week => {
-    //         const meal = week.meals.id(req.params.weeksId),
-    //         const item = meal.items.id(req.params.id)
-    //         res.send(item)
-    //     })
+// // '/weeks/:weeksId/meals/:mealsId/items/'
+// router.get('/:id', (req, res) => {
+//     Week.findById(req.params.weeksId)
+//     .then(week => {
+//         res.render('items/show', {
+//             item: week.meals.items.id(req.params.id)
+//         })
+//     })
+// })
+
+router.get('/new', (req, res) => {
+    res.send('new item route hit!')
 })
 
 
-module.exports = router;
+module.exports = router

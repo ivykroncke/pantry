@@ -1,4 +1,3 @@
-
 <h1>Meal: {{meal.name}}</h1>
 <p> Ingredients:</p>
 <div>
@@ -7,6 +6,7 @@
     {{/each}}
 </div>
 <br>
-<div><a href='meals/{{meal.id}}/items/new'>Add an Ingredient!</a></div>
+<div><a href='/weeks/{{week._id}}/meals/{{meal._id}}/items/new'>Add an Ingredient!</a></div>
+
 <br>
 <div><a href='meals/edit'>Edit this Meal</a></div>
