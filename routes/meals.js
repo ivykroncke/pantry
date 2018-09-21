@@ -1,16 +1,22 @@
 var express = require('express')
-var router = express.Router()
-const { Weeks, Meal } = require('../db/schema')
+var router = express.Router({mergeParams: true})
+const { Week, Meal } = require('../db/schema')
 
 //Show This Meal
 router.get('/:id', (req, res) => {
-    Meal.findById(req.params.weeksId)
-        .then((week) => {
-            res.render('meals/show'), {
-                // weeksId: req.params.weeksId,
-                // meal: week.meal.id(req.params.id)
-            }
+    //grab Week from the schema by its req params
+    Week.findById(req.params.weeksId)
+        //then when you have it, take that info
+        .then(week => {
+        //     //render the meals/show page
+            res.render('meals/show', { week
+                // meal: week.meals.id(req.params.id)
+            })
         })
 })
 
+//Edit a Meal
+
+
 module.exports = router
+
