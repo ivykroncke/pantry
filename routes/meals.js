@@ -6,7 +6,8 @@ const { Week, Meal } = require('../db/schema')
 
 // NEW, render new form
 router.get('/new', (req, res) => {
-    res.render('meals/new')
+    res.render('meals/new', { 
+        weeksId: req.params.weeksId })
 })
 
 // Show This Meal
@@ -20,14 +21,24 @@ router.get('/:id', (req, res) => {
         }) 
 })
 
+
 // CREATE, submit new
 router.post('/', (req, res) => {
-    const newMeal = new Meal(req.body)
-    Meal.findById(req.params.weeksId)
+    Week.findById(req.params.weeksId)
         .then(week => {
-            week.meals.push(newMeal)
-            return week.save()
+            res.send(week)
         })
+
+
+    // const newMeal = new Meal(req.body)
+    // Week.findById(req.params.weeksId)
+    //     .then(week => {
+    //         week.meals.push(newMeal)
+    //         return week.save()
+    //     })
+    //     res.send('check for new object!')
+        // .then(week =>
+        //     res.send('check and see if that saved... then work on redirect link'))
 })
 
 module.exports = router
