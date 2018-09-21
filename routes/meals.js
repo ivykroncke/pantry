@@ -4,7 +4,6 @@ const { Week, Meal } = require('../db/schema')
 
 //Show This Meal
 router.get('/:id', (req, res) => {
-
     Week.findById(req.params.weeksId)
         .then(week => {
             res.render('meals/show', { 
@@ -14,7 +13,10 @@ router.get('/:id', (req, res) => {
         }) 
 })
 
-//Edit a Meal
+//Create a Meal
+router.get('/:id/new', (req, res) => {
+    res.send('hit the new meal route')
+})
 
 
 module.exports = router
