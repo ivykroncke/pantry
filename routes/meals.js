@@ -22,11 +22,12 @@ router.get('/:id', (req, res) => {
 
 // CREATE, submit new
 router.post('/', (req, res) => {
-    res.send('route hit!')
-    // Meal.create(req.body)
-    //     .then(meal => {
-    //         res.redirect(`/meals/${meals._id}`)
-    //     })
+    const newMeal = new Meal(req.body)
+    Meal.findById(req.params.weeksId)
+        .then(week => {
+            week.meals.push(newMeal)
+            return week.save()
+        })
 })
 
 module.exports = router
