@@ -15,7 +15,7 @@ router.get('/:id', (req, res) => {
     Week.findById(req.params.weeksId)
         .then(week => {
             res.render('meals/show', { 
-                mealId: req.params.id, //test and remove
+                mealId: req.params.id,
                 meal: week.meals.id(req.params.id),
                 week
             })

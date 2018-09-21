@@ -13,15 +13,15 @@ router.get('/new', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    res.send('post route hit')
     const newItem = new Item(req.body)
     Week.findById(req.params.weeksId)
         .then(week => {
-            week.meals.items.push(newMeal)
+            const meal = week.meals.id(req.params.mealsId)
+            meal.items.push(newItem)
             return week.save()
         })
-        then(week => {
-            res.redirect('/weeks')
+        .then(week => {
+            res.send(week)
         })
 })
 
