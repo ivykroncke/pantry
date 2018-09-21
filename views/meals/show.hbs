@@ -1,16 +1,11 @@
 
 <h1>Meal: {{meal.name}}</h1>
-<p> Ingredients here!</p>
+<p> Ingredients:</p>
 <div>
     {{#each meal.items}}
         <div>{{this.quantity}} {{this.unit}} - {{this.name}}</div>
     {{/each}}
 </div>
 <br>
-<div>
-{{!-- {{#each meal.item}}
-    {{item.name}}
-{{/each}} --}}
-<p></p>
-</div>
-<a href='meals/edit'>Link to Edit Meals</a>
+<div><a href=''>Add an Ingredient!</a></div>
+<div><a href='meals/edit'>Edit this Meal</a></div>

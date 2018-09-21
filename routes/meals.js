@@ -21,7 +21,6 @@ router.get('/:id', (req, res) => {
         }) 
 })
 
-
 // CREATE, submit new
 router.post('/', (req, res) => {
     const newMeal = new Meal(req.body)
