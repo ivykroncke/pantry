@@ -24,21 +24,15 @@ router.get('/:id', (req, res) => {
 
 // CREATE, submit new
 router.post('/', (req, res) => {
+    const newMeal = new Meal(req.body)
     Week.findById(req.params.weeksId)
         .then(week => {
-            res.send(week)
+            week.meals.push(newMeal)
+            return week.save()
         })
-
-
-    // const newMeal = new Meal(req.body)
-    // Week.findById(req.params.weeksId)
-    //     .then(week => {
-    //         week.meals.push(newMeal)
-    //         return week.save()
-    //     })
-    //     res.send('check for new object!')
-        // .then(week =>
-        //     res.send('check and see if that saved... then work on redirect link'))
+        .then(week => {
+            res.redirect(`/weeks/${req.params.weeksId}`)
+        })
 })
 
 module.exports = router
