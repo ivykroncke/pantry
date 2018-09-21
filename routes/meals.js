@@ -4,7 +4,7 @@ const { Week, Meal } = require('../db/schema')
 
 // app.use('/weeks/:weeksId/meals', mealsRouter)
 
-// Add a new meal to THIS week
+// NEW, render new form
 router.get('/new', (req, res) => {
     res.render('meals/new')
 })
@@ -20,5 +20,13 @@ router.get('/:id', (req, res) => {
         }) 
 })
 
-module.exports = router
+// CREATE, submit new
+router.post('/', (req, res) => {
+    res.send('route hit!')
+    // Meal.create(req.body)
+    //     .then(meal => {
+    //         res.redirect(`/meals/${meals._id}`)
+    //     })
+})
 
+module.exports = router
