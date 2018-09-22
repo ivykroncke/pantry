@@ -51,35 +51,26 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Week.findById(req.params.weeksId)
         .then(week => {
-            Week.findOneAndUpdate(req.params.id, req.body)
+            const updatedMeal = week.meals.id(req.params.id)
+            updatedMeal.set(req.body)
             return week.save()
         })
         .then(week => {
-            res.send('check your compass')
+            res.redirect(`/weeks/${req.params.weeksId}/`)
         })
   })
 
 //DELETE
 router.delete('/:id', (req, res) => {
     Week.findById(req.params.weeksId)
-    .then((week) => {
-        //remove the meal that corresponds to that
+    .then(week => {
         week.meals.id(req.params.id).remove()
         return week.save()
     })
-    .then((week) => {
+    .then(week => {
         res.redirect(`/weeks/${req.params.weeksId}/`)
     })
   })
-
-  // DELETE A WEEK
-
-//   router.delete('/:id', (req, res) => {
-//     Week.findByIdAndRemove(req.params.id)
-//     .then(() => {
-//       res.redirect('/weeks')
-//     })
-//   })
 
 
 module.exports = router
