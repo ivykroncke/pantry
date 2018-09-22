@@ -47,7 +47,17 @@ router.post('/', (req, res) => {
         })
 })
 
-//EDIT. render Edit form
+//UPDATE
+router.put('/:id', (req, res) => {
+    Week.findById(req.params.weeksId)
+        .then(week => {
+            Meal.findOneAndUpdate(req.params.id, req.body)
+            return week.save()
+        })
+        .then(week => {
+            res.send('check your compass')
+        })
+  })
 
 
 module.exports = router
