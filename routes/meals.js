@@ -2,8 +2,6 @@ var express = require('express')
 var router = express.Router({mergeParams: true})
 const { Week, Meal } = require('../db/schema')
 
-// app.use('/weeks/:weeksId/meals', mealsRouter)
-
 // NEW, render new form
 router.get('/new', (req, res) => {
     res.render('meals/new', { 

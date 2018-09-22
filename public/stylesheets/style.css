@@ -6,6 +6,10 @@ body {
   font-family: 'Roboto', sans-serif
 }
 
+ul {
+  list-style-type:none;
+}
+
 /* wrapper is a flex container for entire site */
 #wrapper {
   width: 100%;

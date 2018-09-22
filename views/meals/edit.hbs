@@ -1,12 +1,29 @@
-<h1>Edit {{meal.name}}</h1>
-
+<h1>{{meal.name}}</h1>
+<p>Edit Meal Name</p>
+{{!-- CHANGE NAME OF MEAL --}}
 <form action='/weeks/{{week._id}}/meals/{{meal._id}}?_method=PUT' method='POST'>
-<div>Name: <input type='text' name='name' value='{{meal.name}}'></div>
-<div><input type='submit' value='Update Meal'></div>
+<div>Name: <input type='text' name='name' value='{{meal.name}}'><input type='submit' value='Update'></div>
 </form>
 <br>
+
+<div><p>Edit Meal Ingredients</p> 
+    {{#each meal.items}}
+        <div>
+            <form action='/weeks/{{week._id}}/meals/{{meal._id}}/items/{{items._id}}?_method=DELETE' method='POST'>
+        <div>{{this.quantity}} {{this.unit}} {{name}} <input type='submit' value='REMOVE'></div>
+        </div>
+</form>
+    {{/each}}
+</div>
+
+<br>
+
+<div><a href='/weeks/{{week._id}}/meals/{{meal._id}}/items/new'>+ Add Ingredient</a></div>
+<br>
+{{!-- DELETE ENTIRE MEAL --}}
 <form action='/weeks/{{week._id}}/meals/{{meal._id}}?_method=DELETE' method='POST'>
 <div><input type='submit' value='DELETE Meal'></div>
 </form>
+
 <br>
 <a href='/weeks/'>Back to Main</a>
