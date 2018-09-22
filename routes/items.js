@@ -37,8 +37,7 @@ router.delete('/:id', (req, res) => {
         return week.save()
     })
     .then(week => {
-        res.send('check COMPASSSS')
-        // res.redirect(`/weeks/${req.params.weeksId}/meals/${req.params.mealsId}/edit`)
+        res.redirect(`/weeks/${req.params.weeksId}/meals/${req.params.mealsId}/edit`)
     })
 })
 
