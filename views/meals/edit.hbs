@@ -9,7 +9,7 @@
 <div><p>Edit Meal Ingredients</p> 
     {{#each meal.items}}
         <div>
-            <form action='/weeks/{{week._id}}/meals/{{meal._id}}/items/{{items._id}}?_method=DELETE' method='POST'>
+<form action='/weeks/{{../week._id}}/meals/{{../meal._id}}/items/{{this._id}}?_method=DELETE' method='POST'>
         <div>{{this.quantity}} {{this.unit}} {{name}} <input type='submit' value='REMOVE'></div>
         </div>
 </form>
