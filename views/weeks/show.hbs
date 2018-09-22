@@ -1,21 +1,21 @@
 <h1>{{week.name}}</h1>
- <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
+
+<div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a></div>
 <br>
 <div>
     {{#each week.meals}}
     <div>
-       {{this.name}}
-       <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</a>
+       <div>{{this.name}}</div>
+       <img src='{{../week.img}}' href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</img>
        </div>
     {{/each}}
 </div>
 <br>
 
-<div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a>
-</div>
+
 
 <br>
-
+ <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
 <div>
     <a href='/weeks'>Back to Main</a>
 </div>
