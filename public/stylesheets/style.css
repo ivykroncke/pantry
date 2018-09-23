@@ -4,13 +4,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-}
 
 a {
   color: coral;
+  text-decoration: none;
 }
 a:hover {
   color: rgb(244, 175, 150);
@@ -76,15 +73,26 @@ h1 {
   font-size: 6rem;
   letter-spacing: .2rem;
   width: 50rem;
-  padding-bottom: 6rem;
   margin: 0 auto;
 }
 
 .week-square-container {
   display: grid;
-  Grid-template-columns: 1fr 1fr;
-  Grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  Grid-template-columns: 2fr 2fr;
+  Grid-template-columns: 2fr 2fr;
+  grid-gap: 4fr;
+}
+
+img.week-square {
+  height: 25rem;
+  width: auto;
+}
+
+.week-square-name {
+  font-size: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
 }
 
 footer {
@@ -92,9 +100,9 @@ footer {
   position: absolute;
 }
 
-.my-button {
-  margin-bottom: 5vh;
-  padding: 1vh 2vh;
+div.my-button {
+  font-family: 'Source Serif Pro';
+  margin-bottom: 2vh;
   font-size: 2rem;
   text-align: center;
   color: white;
@@ -103,6 +111,13 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 10%;
+  filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
+}
+
+p.inside-my-button {
+  margin: 0 auto;
+  padding: 1rem;
+  text-shadow: .5rem .5rem 1rem rgba(103, 78, 69, 0.3);
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
