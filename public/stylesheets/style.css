@@ -17,7 +17,7 @@ ul {
   list-style-type: none;
 }
 
-#site-wrapper {
+.site-wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ img.week-square {
   width: 20rem;
 }
 
-.week-square-name {
+.text {
   font-size: 3rem;
   padding: 1rem;
   margin-bottom: 1rem;

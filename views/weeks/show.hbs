@@ -1,21 +1,24 @@
-<h1>{{week.name}}</h1>
-
-<div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a></div>
-<br>
-<div>
-    {{#each week.meals}}
-    <div>
-       <div>{{this.name}}</div>
-       <img src='{{../week.img}}' href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</img>
-       </div>
-    {{/each}}
-</div>
-<br>
-
-
-
-<br>
- <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
-<div>
-    <a href='/weeks'>Back to Main</a>
+<div class='site-wrapper'>
+    <header>
+        <div 'photo-header'>
+        <img class='week-img' src='{{week.img}}'>
+        <h1 class='week-title'>{{week.name}}</h1>
+        </div>
+        </div>  
+    </header>
+    <main class='week-main'>
+        {{#each week.meals}}
+        <div class='text'>
+            <div clas=>{{this.name}}
+            <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</img>
+        </div>
+        {{/each}}
+    </main>
+    <footer class='week-footer'>
+        <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
+        <div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a></div>
+        <div>
+            <a href='/weeks'>Back to Main</a>
+        </div>
+    </footer>
 </div>

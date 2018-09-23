@@ -1,0 +1,19 @@
+.week-title {
+    width: 100%;
+    font-size: 5rem;
+    margin: 0 auto;
+  }
+
+.week-img {
+    width: 100vw;
+    height: 20vh;
+    margin: 0 auto;
+    background: coral;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+    filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
+}
