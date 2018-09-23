@@ -1,12 +1,11 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Serif Pro', Georgia, serif;
 }
 
-
 a {
-  color: coral;
+  color: darkslategray;
   text-decoration: none;
 }
 a:hover {
@@ -26,23 +25,21 @@ img {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: space-between;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/subwaytile.jpg') repeat;
   background-size: cover;
 }
 
 /* HEADER */
-/* 
+
 header {
-  position: Absolute;
-  top: 0;
-  left: 0;
-} */
+  align-self: flex-start; 
+}
 
 .semicircle-top {
   width: 100vw;
-  height: 20vh;
+  height: 18vh;
   margin: 0;
   background: coral;
   display: flex;
@@ -56,7 +53,7 @@ header {
 
 .site-title {
   font-family: 'Source Serif Pro';
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: .3rem;
   text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .3);
   color: rgb(255, 247, 247);
@@ -74,10 +71,20 @@ main {
 
 h1 {
   font-family: 'Abril Fatface', serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   letter-spacing: .2rem;
   width: 100vw;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 0.35rem auto;
+}
+
+.subheading {
+  font-size: 1.15rem;
+  color: charcoal;
+  margin-bottom: 1.5rem;
+}
+
+.half-width {
+  width: 60%;
 }
 
 .week-square-container {
@@ -94,36 +101,39 @@ img.week-square {
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: charcoal;
-  margin-bottom: .25rem;
+  margin-bottom: .75rem;
+  text-transform: lowercase
 }
 
 footer {
-  bottom: 0;
-  position: absolute;
+position: relative;
+margin-top: .5rem;
 }
 
 div.my-button {
   font-family: 'Source Serif Pro';
-  margin-bottom: 2vh;
-  font-size: 2rem;
+  margin-bottom: 3vh;
+  font-size: 1.25rem;
   text-align: center;
   color: white;
   background: coral;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10%;
+  border-radius: .25em;
   filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
 }
 
 p.inside-my-button {
   color: whitesmoke;
   margin: 0 auto;
-  padding: 1rem;
+  padding: .3rem .5rem;
   text-shadow: .5rem .5rem 1rem rgba(103, 78, 69, 0.3);
 }
+
+/* ////////////////////////////////////////////////////////////////////////////// */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
