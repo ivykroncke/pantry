@@ -68,7 +68,7 @@ main {
 }
 
 .cushion {
-  min-height: 10vh;
+  display: none;
 }
 
 .whatkindofweekisit {
@@ -76,15 +76,11 @@ main {
   font-size: 6rem;
 }
 
-/* .week-square-container {
+.week-square-container {
   display: grid;
-  Grid-template-columns: 100px 100px;
-  Grid-template-columns: 100px 100px;
-} */
-
-img {
-  height: 100 px;
-  width: auto;
+  Grid-template-columns: 1fr 1fr;
+  Grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 
 footer {
@@ -112,6 +108,7 @@ footer {
     font-size: 7rem;
   }
   .cushion {
+    display: block;
     min-height: 5vh;
   }
 }
@@ -123,6 +120,7 @@ footer {
     font-size: 5rem;
   }
   .cushion {
+    display: block;
     height: 25vh;
   }
   .whatkindofweekisit {
