@@ -57,42 +57,40 @@ header {
   color: rgb(255, 247, 247);
 }
 
-/* BODY */
-
 main {
   width: 100%;
   position: relative;
 }
 
 .cushion {
-  display: none;
+  display: inline-block;
+  height: 20rem;
 }
 
 h1 {
   font-family: 'Abril Fatface', serif;
-  font-size: 6rem;
+  font-size: 4rem;
   letter-spacing: .2rem;
-  width: 50rem;
-  margin: 0 auto;
+  width: 30rem;
+  margin: 0 auto 2rem auto;
 }
 
 .week-square-container {
   display: grid;
-  Grid-template-columns: 2fr 2fr;
-  Grid-template-columns: 2fr 2fr;
-  grid-gap: 4fr;
+  grid-template-columns: 25rem 25rem;
+  grid-template-rows: 25rem 25rem;
+  grid-gap: 5rem;
+  justify-items: center;
 }
 
 img.week-square {
-  height: 25rem;
-  width: auto;
+  width: 20rem;
 }
 
 .week-square-name {
   font-size: 3rem;
   padding: 1rem;
   margin-bottom: 1rem;
-
 }
 
 footer {
@@ -115,6 +113,7 @@ div.my-button {
 }
 
 p.inside-my-button {
+  color: whitesmoke;
   margin: 0 auto;
   padding: 1rem;
   text-shadow: .5rem .5rem 1rem rgba(103, 78, 69, 0.3);
