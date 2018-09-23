@@ -27,7 +27,7 @@ ul {
 
 /* HEADER */
 header{
-  position: fixed;
+  position: Absolute;
   top: 0;
   left: 0;
 }
@@ -61,6 +61,11 @@ header{
 
 main {
   width: 100%;
+  position: relative;
+}
+
+.cushion {
+  min-height: 10vh;
 }
 
 footer {
@@ -68,7 +73,7 @@ footer {
   margin: 0 auto;
   left: 0;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
