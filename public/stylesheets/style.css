@@ -26,7 +26,7 @@ img {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
   background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/subwaytile.jpg') repeat;
   background-size: cover;
@@ -43,7 +43,7 @@ header {
 .semicircle-top {
   width: 100vw;
   height: 20vh;
-  margin: 0 auto;
+  margin: 0;
   background: coral;
   display: flex;
   flex-direction: row;
@@ -69,7 +69,7 @@ main {
 
 .cushion {
   display: inline-block;
-  height: 20rem;
+  height: 1px;
 }
 
 h1 {
@@ -80,22 +80,23 @@ h1 {
   margin: 0 auto 2rem auto;
 }
 
-/* .week-square-container {
+.week-square-container {
   display: grid;
-  grid-template-columns: 25rem 25rem;
-  grid-template-rows: 25rem 25rem;
-  grid-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr;
+  grid-gap: .25fr;
   justify-items: center;
 }
 
 img.week-square {
-  width: 20rem;
-} */
+  width: 10rem;
+  height: auto;
+}
 
 .text {
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: charcoal;
+  margin-bottom: .25rem;
 }
 
 footer {
