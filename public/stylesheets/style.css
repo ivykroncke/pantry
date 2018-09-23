@@ -3,7 +3,8 @@ body {
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
-  font-family: 'Roboto', sans-serif
+  font-family: 'Roboto', sans-serif;
+  background: 
 }
 
 ul {
@@ -23,7 +24,8 @@ ul {
 
 .semicircle-top{
     width: 100vw;
-    margin: 0;
+    height: 20vh;
+    margin: 0 auto;
     background: coral;
     display: flex;
     flex-direction: row;
@@ -35,24 +37,32 @@ ul {
 
 .site-title{
   font-family: 'Source Serif Pro';
-  font-size: 48px;
+  font-size: 9rem;
+  letter-spacing: .3rem;
+  text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .5);
   color: whitesmoke;
 }
 
-a {
-  color: #00B7FF;
-}
+/* MEDIA QUERIES!!! */
 
-.thumbnail {
-  height: 100px;
-  width: auto;
-}
+/* May not need to use smallest since this is the default...  */
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+} */
 
-/* Mobile */
-@media screen and (max-width: 768px) {
-  img {
-      
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .site-title {
+    font-size: 7rem;
   }
-}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .site-title {
+    font-size: 5rem;
+  }
+} 
 
 /*
