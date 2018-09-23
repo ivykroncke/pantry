@@ -24,9 +24,9 @@ const veggieplate = new Meal({ name: 'Farmer\'s Autumn Vegetable Plate', descrip
 
 //WEEKS
 const healthy = new Week({ name: 'Happy and Healthy', img: '/images/greensmoothie.jpg', meals: [scramble] })
-const indulgent = new Week({ name: 'Indulgent', img: '/images/mockupimage.jpeg', meals: [whitepizza] })
-const balanced = new Week({ name: 'Perfectly Balanced', img: '/images/tacos.jpeg', meals: [carnitas]})
-const veggie = new Week({ name: 'Veggie Week', img: '/images/veggieplate.jpeg', meals: [veggieplate]})
+const indulgent = new Week({ name: 'Indulgent', img: '/images/burger.jpg', meals: [whitepizza] })
+const balanced = new Week({ name: 'Perfectly Balanced', img: '/images/tacos.jpg', meals: [carnitas]})
+const veggie = new Week({ name: 'Veggie Week', img: '/images/veggieplate.jpg', meals: [veggieplate]})
 
 Week.deleteMany()
     .then(() => {
