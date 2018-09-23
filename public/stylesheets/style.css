@@ -71,9 +71,13 @@ main {
   display: none;
 }
 
-.whatkindofweekisit {
+h1 {
   font-family: 'Abril Fatface', serif;
   font-size: 6rem;
+  letter-spacing: .2rem;
+  width: 50rem;
+  padding-bottom: 6rem;
+  margin: 0 auto;
 }
 
 .week-square-container {
@@ -102,25 +106,23 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-
 @media only screen and (min-width: 768px) {
   .site-title {
     font-size: 7rem;
   }
   .cushion {
-    display: block;
+    display: inline-block;
     min-height: 5vh;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-
 @media only screen and (min-width: 992px) {
   .site-title {
     font-size: 5rem;
   }
   .cushion {
-    display: block;
+    display: inline-block;
     height: 25vh;
   }
   .whatkindofweekisit {
