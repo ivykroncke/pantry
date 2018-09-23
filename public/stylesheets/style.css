@@ -1,13 +1,14 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Source Serif Pro', Georgia, serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   color: darkslategray;
   text-decoration: none;
 }
+
 a:hover {
   color: rgb(244, 175, 150);
 }
@@ -52,7 +53,7 @@ header {
 }
 
 .site-title {
-  font-family: 'Source Serif Pro';
+  font-family: 'Source Serif Pro', serif;
   font-size: 2.5rem;
   letter-spacing: .3rem;
   text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .3);
@@ -78,6 +79,7 @@ h1 {
 }
 
 .subheading {
+  font-family: 'Source Serif Pro', serif;
   font-size: 1.15rem;
   color: charcoal;
   margin-bottom: 1.5rem;

@@ -1,24 +1,30 @@
-<div class='site-wrapper'>
+<div class='site-wrapper-side'>
     <header>
-        <div 'photo-header'>
-        <img class='week-img' src='{{week.img}}'>
-        <h1 class='week-title'>{{week.name}}</h1>
+        <div class='semicircle-side'>
+            <div class='side-text'>{{week.name}}</div>
         </div>
-        </div>  
+            {{!-- <img class='week-img' src='{{week.img}}'>
+            <h1 class='half-width'>{{week.name}}</h1>
+        </div> --}}
     </header>
-    <main class='week-main'>
-        {{#each week.meals}}
-        <div class='text'>
-            <div clas=>{{this.name}}
-            <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</img>
+    <main>
+        <div class='breadcrumbs-container'>
+            <div class='breadcrumbs'><a href='/weeks/'>Weeks</a> > {{week.name}}</div>
         </div>
-        {{/each}}
+        <content class='week-main'>
+            {{#each week.meals}}
+            <div class='text'>
+                <div>{{this.name}}</div>
+                <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</img>
+            </div>
+            {{/each}}
+        </content>
+        <footer class='week-footer'>
+            <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
+            <div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a></div>
+            <div>
+                <a href='/weeks'>Back to Main</a>
+            </div>
+        </footer>
     </main>
-    <footer class='week-footer'>
-        <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
-        <div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a></div>
-        <div>
-            <a href='/weeks'>Back to Main</a>
-        </div>
-    </footer>
 </div>
