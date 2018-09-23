@@ -1,14 +1,17 @@
 body {
   margin: 0;
-  font: 10rem;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+img {
+  height: 200px;
+  width: 200px;
 }
 
 a {
   color: coral;
 }
-
 a:hover {
   color: rgb(244, 175, 150);
 }
@@ -16,8 +19,6 @@ a:hover {
 ul {
   list-style-type: none;
 }
-
-/* wrapper is a flex container for entire site */
 
 #site-wrapper {
   height: 100vh;
@@ -27,11 +28,6 @@ ul {
   justify-content: center;
   background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/subwaytile.jpg') repeat;
   background-size: cover;
-}
-
-.thumbnail {
-  width: 100px;
-  height: 100px;
 }
 
 /* HEADER */
@@ -66,13 +62,13 @@ header {
 
 /* BODY */
 
-/* #weeks-grid{
-  display: grid;
-} */
-
 main {
   width: 100%;
   position: relative;
+}
+
+.cushion {
+  min-height: 10vh;
 }
 
 .whatkindofweekisit {
@@ -80,8 +76,15 @@ main {
   font-size: 6rem;
 }
 
-.cushion {
-  min-height: 10vh;
+/* .week-square-container {
+  display: grid;
+  Grid-template-columns: 100px 100px;
+  Grid-template-columns: 100px 100px;
+} */
+
+img {
+  height: 100 px;
+  width: auto;
 }
 
 footer {
@@ -89,7 +92,7 @@ footer {
   position: absolute;
 }
 
-#my-button {
+.my-button {
   margin-bottom: 5vh;
   padding: 1vh 2vh;
   font-size: 2rem;

@@ -8,21 +8,20 @@
         <div class='cushion'></div>
         <div class='whatkindofweekisit'> What Kind of </div>
         <div class='whatkindofweekisit'>Week Is It?</div>
-        <div id='weeks-grid'>
+        <div class='week-square-container'>
             {{#each week}}
-            <div>
+            <div class='week-square-child'>
                 <a href='/weeks/{{this._id}}'>
-                    <img class='thumbnail' src='{{this.img}}' alt='{{this.name}}'>
+                    <img class='week-square' class='thumbnail' src='{{this.img}}' alt='{{this.name}}'>
                     <div>{{this.name}}</div>
                 </a>
-
             </div>
             {{/each}}
         </div>
     </main>
     <footer>
-        <div id='my-button'>
-           <p><a href='/weeks/new'></a>Create A New Week!</a></p>
+        <div class='my-button'>
+            <p><a href='/weeks/new'></a>Create A New Week!</a></p>
         </div>
     </footer>
 </div>
