@@ -4,7 +4,6 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  background: 
 }
 
 ul {
@@ -18,6 +17,13 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('/images/subwaytile.jpg');
+  background-repeat: repeat;
+}
+
+.thumbnail{
+  width: 100px;
+  height: 100px;
 }
 
 /* HEADER */
@@ -33,14 +39,15 @@ ul {
     justify-content: center;
     border-bottom-left-radius: 200%;
     border-bottom-right-radius: 200%;
+    filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
 }
 
 .site-title{
   font-family: 'Source Serif Pro';
   font-size: 9rem;
   letter-spacing: .3rem;
-  text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .5);
-  color: whitesmoke;
+  text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .3);
+  color: rgb(255, 247, 247);
 }
 
 /* MEDIA QUERIES!!! */
