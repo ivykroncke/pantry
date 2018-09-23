@@ -17,6 +17,11 @@ ul {
   list-style-type: none;
 }
 
+img {
+  height: 200px;
+  width: 200px;
+}
+
 .site-wrapper {
   height: 100vh;
   display: flex;
@@ -28,12 +33,12 @@ ul {
 }
 
 /* HEADER */
-
+/* 
 header {
   position: Absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .semicircle-top {
   width: 100vw;
@@ -51,7 +56,7 @@ header {
 
 .site-title {
   font-family: 'Source Serif Pro';
-  font-size: 9rem;
+  font-size: 2rem;
   letter-spacing: .3rem;
   text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .3);
   color: rgb(255, 247, 247);
@@ -69,13 +74,13 @@ main {
 
 h1 {
   font-family: 'Abril Fatface', serif;
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: .2rem;
-  width: 30rem;
+  width: 100vw;
   margin: 0 auto 2rem auto;
 }
 
-.week-square-container {
+/* .week-square-container {
   display: grid;
   grid-template-columns: 25rem 25rem;
   grid-template-rows: 25rem 25rem;
@@ -85,10 +90,10 @@ h1 {
 
 img.week-square {
   width: 20rem;
-}
+} */
 
 .text {
-  font-size: 3rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin-bottom: 1rem;
 }
