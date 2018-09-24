@@ -14,12 +14,12 @@ const MealSchema = new Schema({
 })
 
 const ImageSchema = new Schema({
-    src: []
+    src: String
 })
 
 const WeekSchema = new Schema({
     name: String,
-    img: { type: [ImageSchema], default: ['/images/pesto.jpg']},
+    img: { type: [ImageSchema], default: '/images/pesto.jpg' },
     meals: [MealSchema]
 })
 
