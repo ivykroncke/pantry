@@ -11,7 +11,16 @@
 
             <div>Select an Image:</div>
             <div class='new-meal-img-grid'>
+                {{#each week}}
+                <div>
+                    <div>
+                        <input type="radio" name="img" value='{{this.img}}'>
+                        </div>
+                    <div><img class='thumbnail' src='{{this.img}}'></div>
+                </div>
+                {{/each}}
 
+                {{!--
                 <div>
                     <div><input type="radio" name="img" value='/images/burger.jpg'></div>
                     <img class='thumbnail' src='/images/burger.jpg'>
@@ -32,18 +41,14 @@
                     <div><input type="radio" name="img" value='/images/veggieplate.jpg'></div>
                     <img class='thumbnail' src='/images/veggieplate.jpg'>
                 </div>
-                                <div>
+                <div>
                     <div><input type="radio" name="img" value='/images/tacos.jpg'></div>
                     <img class='thumbnail' src='/images/tacos.jpg'>
-                </div>
+                </div> --}}
 
             </div>
-
-
     </div>
-
 
     <div class='semicircle-bottom'><input class='input' type='submit' value='create'></div>
     </form>
-</div>
 </div>
