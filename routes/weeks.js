@@ -1,9 +1,9 @@
 var express = require("express") 
 var router = express.Router() 
-const { Week } = require("../db/schema") 
+const { Week, Image } = require("../db/schema") 
 
 //SHOW ALL
-router.get("/", (req, res, next) => {
+router.get("/", (req, res) => {
   Week.find().then(week => {
     res.render("weeks/index", { week }) 
   }) 
@@ -11,8 +11,8 @@ router.get("/", (req, res, next) => {
 
 //NEW, RENDER NEW FORM
 router.get("/new", (req, res) => {
-  Week.find().then(week => {
-    res.render("weeks/new", { week }) 
+  Image.find().then(image => {
+    res.render("weeks/new", { image }) 
   }) 
 }) 
 

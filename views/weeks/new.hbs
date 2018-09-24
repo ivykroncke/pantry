@@ -11,12 +11,12 @@
 
             <div>Select an Image:</div>
             <div class='new-meal-img-grid'>
-                {{#each week}}
+                {{#each image}}
                 <div>
                     <div>
-                        <input type="radio" name="img" value='{{this.img}}'>
+                        <input type="radio" name="img" value='{{this.src}}'>
                         </div>
-                    <div><img class='thumbnail' src='{{this.img}}'></div>
+                    <div><img class='thumbnail' src='{{this.src}}'></div>
                 </div>
                 {{/each}}
 
