@@ -28,7 +28,7 @@ const greensmoothie = new Image({ src: '/images/greensmoothie.jpg'})
 const pesto = new Image({ src: '/images/pesto.jpg'})
 const salad = new Image({ src: '/images/salad.jpg'})
 const tacos = new Image({ src: '/images/tacos.jpg'})
-const veggieplate = new Image({ src: '/images/veggieplate'})
+const veggieplate = new Image({ src: '/images/veggieplate.jpg'})
 
 //WEEKS
 const healthy = new Week({ name: 'Happy and Healthy', img: '/images/greensmoothie.jpg', meals: [scramble] })

@@ -6,6 +6,7 @@
     </nav>
     <div>
         <h1>New Week</h1>
+        <a href='weeks/images/new'>Add Your Own!</a>
         <form class='text-serif' action='/weeks' method='POST'>
             <div class='space-around'> Title: <input type='text' name='name'></div>
 
@@ -15,37 +16,12 @@
                 <div>
                     <div>
                         <input type="radio" name="img" value='{{this.src}}'>
-                        </div>
+                    </div>
                     <div><img class='thumbnail' src='{{this.src}}'></div>
                 </div>
                 {{/each}}
-
-                {{!--
-                <div>
-                    <div><input type="radio" name="img" value='/images/burger.jpg'></div>
-                    <img class='thumbnail' src='/images/burger.jpg'>
-                </div>
-                <div>
-                    <div><input type="radio" name="img" value='/images/greensmoothie.jpg'></div>
-                    <img class='thumbnail' src='/images/greensmoothie.jpg'>
-                </div>
-                <div>
-                    <div><input type="radio" name="img" value='/images/salad.jpg'></div>
-                    <img class='thumbnail' src='/images/salad.jpg'>
-                </div>
-                <div>
-                    <div><input type="radio" name="img" value='/images/pesto.jpg'></div>
-                    <img class='thumbnail' src='/images/pesto.jpg'>
-                </div>
-                <div>
-                    <div><input type="radio" name="img" value='/images/veggieplate.jpg'></div>
-                    <img class='thumbnail' src='/images/veggieplate.jpg'>
-                </div>
-                <div>
-                    <div><input type="radio" name="img" value='/images/tacos.jpg'></div>
-                    <img class='thumbnail' src='/images/tacos.jpg'>
-                </div> --}}
-
+            </div>
+            <div>
             </div>
     </div>
 

@@ -11,6 +11,7 @@ var methodOverride = require('method-override')
 
 var indexRouter = require('./routes/index')
 var weeksRouter = require('./routes/weeks')
+var imagesRouter = require('.routes/images')
 var mealsRouter = require('./routes/meals')
 var itemsRouter = require('./routes/items')
 
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/weeks', weeksRouter);
+app.use('/weeks/images', imagesRouter)
 app.use('/weeks/:weeksId/meals', mealsRouter)
 app.use('/weeks/:weeksId/meals/:mealsId/items', itemsRouter)
 
