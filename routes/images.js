@@ -4,8 +4,7 @@ const { Week, Image } = require("../db/schema")
 
 //RENDER A PAGE TO UPLOAD YOUR OWN IMAGE
 router.get("/new", (req, res) => {
-    res.send('route ok')
-    // res.render('images/new')
+    res.render('images/new')
 })
 
 module.exports = router 
