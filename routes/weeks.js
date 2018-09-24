@@ -31,6 +31,29 @@ router.get('/:id/edit', (req, res) => {
     })
 })
 
+//LIST
+router.get('/:id/list', (req, res) => {
+  Week.findById(req.params.id)
+    .then(week => {
+        const allItems = {}
+        const allMeals = week.meals
+        allMeals.map(meal => {
+          meal.items.map(item => {
+            if (allItems[item.name]) {
+              allItems[item.name] += item.quantity
+            } else {
+              allItems[item.name] = item.quantity
+            }
+          })
+        })
+        const entries = Object.entries(allItems) 
+        res.render('weeks/list', { 
+          entries,
+          week
+        })
+    })
+})
+
 //CREATE
 router.post('/', (req, res) => {
   Week.create(req.body)
