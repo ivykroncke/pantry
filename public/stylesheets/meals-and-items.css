@@ -32,6 +32,11 @@
     border: .5rem solid rgba(47, 79, 79, 0.3);
 }
 
+.dark-submit {
+    color: white;
+    background: rgba(47, 79, 79, 0.5)
+}
+
 .semicircle-bottom {
     width: 100vw;
     height: 18vh;
@@ -61,4 +66,15 @@
     background: rgba(47, 79, 79, 0.3);
     padding: 2rem;
     margin: 2rem;
+}
+
+.delete {
+    background-color: rgb(160, 5, 36);
+    color: white;
+}
+
+.formatted-form {
+    padding-bottom: 1em;
+    text-align: left;
+    
 }

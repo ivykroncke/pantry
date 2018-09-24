@@ -1,7 +1,7 @@
-<div class='site-wrapper'>
+<div class='site-wrapper-change'>
     <nav>
         <div class='go-back-container'>
-            <a class='go-back' href='/weeks/{{weeksId}}/meals/{{mealsId}}'>Go Back</a>
+            <a class='go-back' href='/weeks/{{week._id}}/meals/{{meal._id}}/'>Go Back</a>
         </div>
     </nav>
 
@@ -10,29 +10,30 @@
         <h1 class='half-width'>{{meal.name}}</h1>
     </header>
 
-    <div>
-        <p>Edit Meal Name</p>
+    <div class='edit-fields'>
         <form action='/weeks/{{week._id}}/meals/{{meal._id}}?_method=PUT' method='POST'>
-            <div>Name: <input type='text' name='name' value='{{meal.name}}'><input type='submit' value='Update'></div>
+            <div>Name: <input type='text' name='name' value='{{meal.name}}'><input class='dark-submit' type='submit' value='Update'></div>
         </form>
-    </div>
 
-    <div>
-        <p>Edit Meal Ingredients</p>
-        {{#each meal.items}}
+        <div class='transparent'>
+            {{#each meal.items}}
+            <div>
+                <form action='/weeks/{{../week._id}}/meals/{{../meal._id}}/items/{{this._id}}?_method=DELETE' method='POST'>
+                    <div>{{this.quantity}} {{this.unit}} {{name}} <input type='submit' value='REMOVE'></div>
+                </form>
+            </div>
+            {{/each}}
+        </div>
+
         <div>
-            <form action='/weeks/{{../week._id}}/meals/{{../meal._id}}/items/{{this._id}}?_method=DELETE' method='POST'>
-                <div>{{this.quantity}} {{this.unit}} {{name}} <input type='submit' value='REMOVE'></div>
+            <form action='/weeks/{{week._id}}/meals/{{meal._id}}?_method=DELETE' method='POST'>
+                <div><input class='delete' type='submit' value='DELETE Meal'></div>
             </form>
         </div>
-        {{/each}}
     </div>
 
-    <div><a href='/weeks/{{week._id}}/meals/{{meal._id}}/items/new'>+ Add Ingredient</a></div>
-    <br>
-    {{!-- DELETE ENTIRE MEAL --}}
-    <form action='/weeks/{{week._id}}/meals/{{meal._id}}?_method=DELETE' method='POST'>
-        <div><input type='submit' value='DELETE Meal'></div>
-    </form>
+    <div class='semicircle-bottom'>
+        <a class='input' href='/weeks/{{week._id}}/meals/{{meal._id}}/items/new'>Add Ingredient</a>
+    </div>
 
 </div>
