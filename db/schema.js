@@ -13,18 +13,24 @@ const MealSchema = new Schema({
     items: [ItemSchema]
 })
 
+const ImageSchema = new Schema({
+    src: []
+})
+
 const WeekSchema = new Schema({
     name: String,
-    img: { type: String, default: '/images/pesto.jpg'},
+    img: { type: [ImageSchema], default: ['/images/pesto.jpg']},
     meals: [MealSchema]
 })
 
 const ItemModel = mongoose.model('Item', ItemSchema)
 const MealModel = mongoose.model('Meal', MealSchema)
+const ImageModel = mongoose.model('Image', ImageSchema)
 const WeekModel = mongoose.model('Week', WeekSchema)
 
 module.exports = {
     Item: ItemModel,
     Meal: MealModel,
+    Image: ImageModel,
     Week: WeekModel
 }
