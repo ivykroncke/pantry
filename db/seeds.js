@@ -4,7 +4,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
 
 const Schema = require('./schema')
 
-const { Item, Meal, Item, Week } = Schema
+const { Item, Meal, Image, Week } = Schema
 
 //ITEMS
 const tofu = new Item({ name: 'extra firm tofu', quantity: 6, unit: 'oz' })
@@ -27,8 +27,8 @@ const burger = new Image({ src: '/images/burger.jpg'})
 const greensmoothie = new Image({ src: '/images/greensmoothie.jpg'})
 const pesto = new Image({ src: '/images/pesto.jpg'})
 const salad = new Image({ src: '/images/salad.jpg'})
-const tacos = new Images({ src: '/images/tacos.jpg'})
-const veggieplate = new Images({ src: '/images/veggieplate'})
+const tacos = new Image({ src: '/images/tacos.jpg'})
+const veggieplate = new Image({ src: '/images/veggieplate'})
 
 //WEEKS
 const healthy = new Week({ name: 'Happy and Healthy', img: '/images/greensmoothie.jpg', meals: [scramble] })
@@ -38,10 +38,13 @@ const veggie = new Week({ name: 'Veggie Week', img: '/images/veggieplate.jpg', m
 
 Week.deleteMany()
     .then(() => {
+        return Image.deleteMany()
+    })
+    .then(() => {
         return Week.insertMany([healthy, indulgent, balanced, veggie])
     })
     .then(() => {
-        return Images.insertMany([burger, greensmoothie, pesto, salad, tacos, veggieplate])
+        return Image.insertMany([burger, greensmoothie, pesto, salad, tacos, veggieplate])
     })
     .then(() => {
         console.log('Done Seeding!')
