@@ -7,4 +7,11 @@ router.get("/new", (req, res) => {
     res.render('images/new')
 })
 
+//CREATE
+router.post("/", (req, res) => {
+    Image.create(req.body).then(image => {
+      res.redirect(`/weeks/edit`) 
+    }) 
+  }) 
+
 module.exports = router 
