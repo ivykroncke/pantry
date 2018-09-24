@@ -100,3 +100,8 @@
   .week-footer {
     margin-bottom: .5rem;
   }
+
+  .thumbnail {
+      width: 2rem;
+      height: 2rem;
+  }

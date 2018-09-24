@@ -5,17 +5,17 @@
         </div>
     </nav>
     <div>
+        <h1>New Week</h1>
         <form action='/weeks' method='POST'>
-                <h1 class='half-width'>New Week</h1>
-                <div class='space-around'>
-                    
-                    Title: <input type='text' name='name'></div>
+            <div class='space-around'> Title: <input type='text' name='name'></div>
 
-                <div class='space-around'>Image: 
-                    
-                    Select Image <input type='text' name='img'>
-                    
-                    </div>
+            <div class='new-meal-img-grid'>
+                <div class='space-around'>Select an Image:</div>
+                <div><input type="radio" name="img" value='/images/burger.jpg'><img class='thumbnail' src='/images/burger.jpg'></div>
+
+            </div>
+
+
             <div class='semicircle-bottom'><input class='input' type='submit' value='create'></div>
         </form>
     </div>

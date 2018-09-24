@@ -15,7 +15,7 @@ const MealSchema = new Schema({
 
 const WeekSchema = new Schema({
     name: String,
-    img: String,
+    img: { type: String, default: '/images/pesto.jpg'},
     meals: [MealSchema]
 })
 
