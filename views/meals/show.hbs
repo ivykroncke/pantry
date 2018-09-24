@@ -1,16 +1,20 @@
-<div class='site-wrapper'>
+<div class='site-wrapper-change'>
+    <div class='go-back-container'>
+        <a class='go-back' href='/weeks/{{week._id}}/'>Go Back</a>
+    </div>
 
-<h1>Meal: {{meal.name}}</h1>
-<p> Ingredients:</p>
-<div>
-    {{#each meal.items}}
-        <div>{{this.quantity}} {{this.unit}} {{name}}</div>
-    {{/each}}
+    <main>
+        <h1 class='half-width'>{{meal.name}}</h1>
+        <div class='text' >{{meal.description}}</div>
+        <div class='transparent'>
+            {{#each meal.items}}
+            <div>{{this.quantity}} {{this.unit}} {{name}}</div>
+            <br>
+            {{/each}}
+        </div>
+    </main>
+
+    <div class='add-week'>
+        <a class='add-week-inside' href='/weeks/{{week._id}}/meals/{{meal._id}}/edit'>Add Ingredients or Edit</a>
+        </div>
 </div>
-<br>
-
-
-<br>
-<div><a href='/weeks/{{week._id}}/meals/{{meal._id}}/edit'>Edit this Meal</a></div>
-</div>
-

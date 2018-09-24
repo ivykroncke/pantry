@@ -1,8 +1,23 @@
-<div class='site-wrapper'>
-<div>Make a New Meal!</div>
-<br>
-<form action='/weeks/{{weeksId}}/meals/' method='POST'>
-<div>Name Your Meal: <input type='text' name='name'></div>
-<div><input type='submit' value='Create New Meal'></div>
-</form>
+<div class='site-wrapper-change'>
+    <header>
+        <div class='go-back-container'>
+            <a class='go-back' href='/weeks/{{weeksId}}/'>Go Back</a>
+        </div>
+    </header>
+
+    <div>
+        <h1>Make a New Meal!</h1>
+        <img class='img-new-meal' src='/images/ingredients.jpg'>
+
+        <form action='/weeks/{{weeksId}}/meals/' method='POST'>
+            <div class='text'>Name Your Meal: </div>
+            <br>
+                <div><input type='text' name='name'></div>
+            <div class='semicircle-bottom'>
+                <div><input class='input' type='submit' value='Create New Meal'></div>
+            </div>
+        </form>
+
+    </div>
+
 </div>
