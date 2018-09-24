@@ -17,11 +17,6 @@ ul {
   list-style-type: none;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-}
-
 .site-wrapper {
   height: 100vh;
   display: flex;
@@ -30,12 +25,6 @@ img {
   justify-content: space-between;
   background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/subwaytile.jpg') repeat;
   background-size: cover;
-}
-
-/* HEADER */
-
-header {
-  align-self: flex-start; 
 }
 
 .semicircle-top {
@@ -58,6 +47,10 @@ header {
   letter-spacing: .3rem;
   text-shadow: .5rem .5rem 1rem rgba(113, 37, 9, .3);
   color: rgb(255, 247, 247);
+}
+
+header {
+  align-self: flex-start;
 }
 
 main {
@@ -114,9 +107,9 @@ position: relative;
 margin-top: .5rem;
 }
 
-div.my-button {
+.my-button {
   font-family: 'Source Serif Pro';
-  margin-bottom: 3vh;
+  /* margin-bottom: 3vh; */
   font-size: 1.25rem;
   text-align: center;
   color: white;

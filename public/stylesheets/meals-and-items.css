@@ -73,8 +73,12 @@
     color: white;
 }
 
+.space-around {
+    border: 2em solid transparent;
+}
+
 .formatted-form {
     padding-bottom: 1em;
     text-align: left;
-    
+
 }

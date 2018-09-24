@@ -1,16 +1,24 @@
-<div class='site-wrapper'>
+<div class='site-wrapper-change'>
+    <nav>
+        <div class='go-back-container'>
+            <a class='go-back' href='/weeks/'>Go Back</a>
+        </div>
+    </nav>
 
-<h1>Edit {{week.name}}</h1>
-<br>
-<form action='/weeks/{{week._id}}?_method=PUT' method='POST'>
-<div>Name: <input type='text' name='name' value='{{week.name}}'></div>
-<div>Image: <input type='text' name='img' value='{{week.img}}'></div>
-<div><input type='submit' value='Update Week'></div>
-</form>
-<br>
-<form action='/weeks/{{week._id}}?_method=DELETE' method='POST'>
-<div><input type='submit' value='DELETE this Week'></div>
-</form>
-<br>
-<a href='/weeks/'>Back to Main</a>
+    <div class='space-around'>
+        <h1 class='half-width'>Edit {{week.name}}</h1>
+    </div>
+
+    <form action='/weeks/{{week._id}}?_method=DELETE' method='POST'>
+        <div class='space-around'><input class='delete' type='submit' value='DELETE this Week'></div>
+    </form>
+
+    <main>
+        <form action='/weeks/{{week._id}}?_method=PUT' method='POST'>
+            <div class='space-around'>Name: <input type='text' name='name' value='{{week.name}}'></div>
+            <div class='space-around'>Image: <input type='text' name='img' value='{{week.img}}'></div>
+            <div class='semicircle-bottom'><input class='input' type='submit' value='Update Week'></div>
+        </form>
+    </main>
+
 </div>

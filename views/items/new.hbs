@@ -8,7 +8,7 @@
 
     <h1 class='half-width'>Add An Ingredient to {{meal.name}}</h1>
 
-    <form action='/weeks/{{week._id}}/meals/{{meal._id}}/items/' method='POST'>
+    <form class='space-around' action='/weeks/{{week._id}}/meals/{{meal._id}}/items/' method='POST'>
         <div class='formatted-form'>Name of Your Ingredient: <input type='text' name='name'></div>
         <div class='formatted-form'>Quantity: <input type='text' name='quantity'></div>
         <div class='formatted-form'>Unit of Measure: <input type='text' name='unit'></div>

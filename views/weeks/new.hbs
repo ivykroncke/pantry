@@ -1,10 +1,16 @@
-<div class='site-wrapper'>
+<div class='site-wrapper-new-week'>
+    <nav>
+        <div class='go-back-container'>
+            <a class='go-back' href='/weeks/'>Go Back</a>
+        </div>
+    </nav>
 
-<h1>Make a New Week!</h1>
-
-<form action='/weeks' method='POST'>
-<div>Name Your Week: <input type='text' name='name'></div>
-<br>
-<div><input type='submit' value='Create New Week'></div>
-</form>
+    <div>
+        <form action='/weeks' method='POST'>
+            <div class=transparent><h1>Make a New Week!</h1>
+            <div>Title: <input type='text' name='name'></div>
+            </div>
+            <div class='semicircle-bottom'><input class='input' type='submit' value='Create New Week'></div>
+        </form>
+    </div>
 </div>
