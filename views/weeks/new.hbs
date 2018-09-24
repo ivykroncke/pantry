@@ -1,4 +1,4 @@
-<div class='site-wrapper-new-week'>
+<div class='site-wrapper-change'>
     <nav>
         <div class='go-back-container'>
             <a class='go-back' href='/weeks/'>Go Back</a>
@@ -6,17 +6,44 @@
     </nav>
     <div>
         <h1>New Week</h1>
-        <form action='/weeks' method='POST'>
+        <form class='text-serif' action='/weeks' method='POST'>
             <div class='space-around'> Title: <input type='text' name='name'></div>
 
+            <div>Select an Image:</div>
             <div class='new-meal-img-grid'>
-                <div class='space-around'>Select an Image:</div>
-                <div><input type="radio" name="img" value='/images/burger.jpg'><img class='thumbnail' src='/images/burger.jpg'></div>
+
+                <div>
+                    <div><input type="radio" name="img" value='/images/burger.jpg'></div>
+                    <img class='thumbnail' src='/images/burger.jpg'>
+                </div>
+                <div>
+                    <div><input type="radio" name="img" value='/images/greensmoothie.jpg'></div>
+                    <img class='thumbnail' src='/images/greensmoothie.jpg'>
+                </div>
+                <div>
+                    <div><input type="radio" name="img" value='/images/salad.jpg'></div>
+                    <img class='thumbnail' src='/images/salad.jpg'>
+                </div>
+                <div>
+                    <div><input type="radio" name="img" value='/images/pesto.jpg'></div>
+                    <img class='thumbnail' src='/images/pesto.jpg'>
+                </div>
+                <div>
+                    <div><input type="radio" name="img" value='/images/veggieplate.jpg'></div>
+                    <img class='thumbnail' src='/images/veggieplate.jpg'>
+                </div>
+                                <div>
+                    <div><input type="radio" name="img" value='/images/tacos.jpg'></div>
+                    <img class='thumbnail' src='/images/tacos.jpg'>
+                </div>
 
             </div>
 
 
-            <div class='semicircle-bottom'><input class='input' type='submit' value='create'></div>
-        </form>
     </div>
+
+
+    <div class='semicircle-bottom'><input class='input' type='submit' value='create'></div>
+    </form>
+</div>
 </div>

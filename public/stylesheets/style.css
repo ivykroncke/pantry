@@ -103,6 +103,14 @@ img.week-square {
   text-transform: lowercase;
 }
 
+.text-serif {
+  font-family: 'Source Serif Pro';
+  font-size: 1.15rem;
+  color: charcoal;
+  margin-bottom: .75rem;
+  text-transform: lowercase;
+}
+
 footer {
 position: relative;
 margin-top: .5rem;
