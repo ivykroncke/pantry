@@ -128,7 +128,7 @@ div.my-button {
   filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
 }
 
-p.inside-my-button {
+.inside-my-button {
   color: whitesmoke;
   margin: 0 auto;
   padding: .3rem .5rem;

@@ -3,28 +3,36 @@
         <div class='semicircle-side'>
             <div class='side-text'>{{week.name}}</div>
         </div>
-            {{!-- <img class='week-img' src='{{week.img}}'>
-            <h1 class='half-width'>{{week.name}}</h1>
-        </div> --}}
     </header>
-    <main>
+
+    <main class='side-main'>
+
         <div class='breadcrumbs-container'>
             <div class='breadcrumbs'><a href='/weeks/'>Weeks</a> > {{week.name}}</div>
         </div>
-        <content class='week-main'>
+
+        <div>
+            <img class='meal-image' src='{{week.img}}'>
+        </div>
+
+        <div class='week-main'>
             {{#each week.meals}}
-            <div class='text'>
-                <div>{{this.name}}</div>
-                <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>View this Meal</img>
+            <div>
+                <a class='meal-title' href='/weeks/{{../week._id}}/meals/{{this._id}}'>
+                    <div class=>{{this.name}}</div>
+                </a>
+                <div class=>{{this.description}}</div>
+
             </div>
             {{/each}}
-        </content>
+        </div>
+
+        <div class='add-week'>
+            <a class='add-week-inside' href='/weeks/{{week._id}}/meals/new'>Add a Meal</a>
+        </div>
+
         <footer class='week-footer'>
-            <div><a href='/weeks/{{week._id}}/edit'>Edit this Week</a></div>
-            <div><a href='/weeks/{{week._id}}/meals/new'>Add a Meal to this Week</a></div>
-            <div>
-                <a href='/weeks'>Back to Main</a>
-            </div>
+            <a href='/weeks/{{week._id}}/edit'>Edit this Week</a>
         </footer>
     </main>
 </div>

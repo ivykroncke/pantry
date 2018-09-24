@@ -8,12 +8,6 @@
     background-size: cover;
 }
 
-/* .week-title {
-    width: 100%;
-    font-size: 5rem;
-    margin: 0 auto;
-} */
-
 .semicircle-side {
     height: 100vh;
     width: 18vw;
@@ -38,17 +32,62 @@
     text-transform: lowercase;
 }
 
+.side-main {
+    height: 100%;
+    padding-left: 8vw;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    text-align: left;
+}
+
 .breadcrumbs-container {
-    margin: 1rem;
+    margin: 1rem 1rem 5rem 0;
 }
 
 .breadcrumbs {
-    font-size: 1rem;
+    font-size: .75rem;
     text-align: right;
     text-decoration: none;
     color: white;
-    background: rgba(47, 79, 79, 0.467);
+    background: rgba(47, 79, 79, 0.3);
     padding: .5rem .5rem;
     border-radius: .25rem;
     filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
 }
+
+.meal-image {
+    border-radius: .25rem;
+    height: 8rem;
+    width: auto;
+    border: .5rem solid rgba(47, 79, 79, 0.3);
+}
+
+.meal-title {
+    font-size: 2rem;
+}
+
+.add-week {
+    font-family: 'Source Serif Pro';
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25em;
+    filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
+}
+
+.add-week-inside {
+    color: whitesmoke;
+    background-color: coral;
+    margin: 0 auto;
+    padding: .3rem .5rem;
+    text-shadow: .5rem .5rem 1rem rgba(103, 78, 69, 0.3);
+  }
+
+  .week-footer {
+    margin-bottom: .5rem;
+  }
