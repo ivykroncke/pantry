@@ -6,37 +6,32 @@
     </header>
 
     <main class='side-main'>
-
         <div class='go-back-container'>
-            <a class='go-back' href='/weeks/'>Go Back</a>
+            <a class='go-back' href='/weeks/'>Back to Main</a>
         </div>
-
-        <div>
-            <img class='meal-image' src='{{week.img}}'>
-        </div>
-
-        <div>
-            <a href='/weeks/{{week._id}}/list/'>Link to aggregate list</a>
-        </div>
-
-        <div class='week-main'>
-            {{#each week.meals}}
+        <div 'img-list-container'>
             <div>
-                <a class='meal-title' href='/weeks/{{../week._id}}/meals/{{this._id}}'>
-                    <div class=>{{this.name}}</div>
-                </a>
-                <div class=>{{this.description}}</div>
+                <img class='meal-image' src='{{week.img}}'>
+            </div>
+            <div class='add-week'>
+                <div><a class='alt-button' href='/weeks/{{week._id}}/meals/new'>Add a Meal</a></div>
+                <div><a class='alt-button' href='/weeks/{{week._id}}/list/'>Shopping List</a></div>
+            </div>
+        </div>
 
+        <div >
+            {{#each week.meals}}
+            <div class='week-meal-list'>
+                <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>
+                    <p class='meal-title'>{{this.name}}</p>
+                </a>
+                <p class='meal-description'>{{this.description}}</p>
             </div>
             {{/each}}
         </div>
 
-        <div class='add-week'>
-            <a class='add-week-inside' href='/weeks/{{week._id}}/meals/new'>Add a Meal</a>
-        </div>
-
-        <footer class='week-footer'>
-            <a href='/weeks/{{week._id}}/edit'>Edit this Week</a>
+        <footer class='lil-space'>
+            <a class='no-going-back' href='/weeks/{{week._id}}/edit'>Edit this Week</a>
         </footer>
     </main>
 </div>

@@ -6,16 +6,8 @@
     justify-content: center;
     background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/subwaytile.jpg') repeat;
     background-size: cover;
+    overflow: scroll;
 }
-
-/* .site-wrapper-new-week {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/salad.jpg');
-} */
 
 .top-padding {
     padding-top: 3vh;
@@ -30,6 +22,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: fixed;
     border-top-right-radius: 200%;
     border-bottom-right-radius: 200%;
     filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
@@ -46,7 +39,7 @@
 
 .side-main {
     height: 100%;
-    padding-left: 8vw;
+    padding-left: 25vw;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
@@ -55,20 +48,12 @@
     text-align: left;
 }
 
-/* .breadcrumbs-container {
-    margin: 1rem 1rem 5rem 0;
+.img-list-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: row;
 }
-
-.breadcrumbs {
-    font-size: .75rem;
-    text-align: right;
-    text-decoration: none;
-    color: white;
-    background: rgba(47, 79, 79, 0.3);
-    padding: .5rem .5rem;
-    border-radius: .25rem;
-    filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
-} */
 
 .meal-image {
     border-radius: .25rem;
@@ -77,9 +62,23 @@
     border: .5rem solid rgba(47, 79, 79, 0.3);
 }
 
-.meal-title {
-    font-size: 2rem;
+#shoppinglistbutton {
+    margin-bottom: 20rem;
 }
+
+.week-meal-list {
+    margin-top: 1.5rem;
+}
+
+.meal-title {
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
+
+.meal-description {
+    margin: 0 auto;
+}
+
 
 .add-week {
     font-family: 'Source Serif Pro';
@@ -98,10 +97,6 @@
     margin: 0 auto;
     padding: .3rem .5rem;
     text-shadow: .5rem .5rem 1rem rgba(103, 78, 69, 0.3);
-}
-
-.week-footer {
-    margin-bottom: .5rem;
 }
 
 .new-meal-img-grid {
