@@ -159,9 +159,10 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   
-  /* .site-wrapper {
+  .site-wrapper {
     height: 100vh;
-  } */
+    overflow: scroll;
+  }
 
   .semicircle-top {
     height: 24vh;
