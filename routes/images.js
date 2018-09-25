@@ -9,9 +9,10 @@ router.get("/new", (req, res) => {
 
 //CREATE
 router.post("/", (req, res) => {
-    Image.create(req.body).then(image => {
-      res.redirect(`/weeks/edit`) 
-    }) 
+    Image.create(req.body)
+        .then(()=> {
+            res.redirect('/weeks/new')
+        })
   }) 
 
 module.exports = router 

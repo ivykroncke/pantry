@@ -8,13 +8,17 @@
     background-size: cover;
 }
 
-.site-wrapper-new-week {
+/* .site-wrapper-new-week {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(transparent, rgba(228, 224, 224, .2), rgba(72, 70, 70, .3)), url('/images/salad.jpg');
+} */
+
+.top-padding {
+    padding-top: 3vh;
 }
 
 .semicircle-side {

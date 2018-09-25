@@ -1,30 +1,33 @@
-<div class='site-wrapper-change'>
-    <nav>
-        <div class='go-back-container'>
-            <a class='go-back' href='/weeks/'>Go Back</a>
-        </div>
-    </nav>
-    <div>
-        <h1>New Week</h1>
-        <a href='./images/new'>Add Your Own!</a>
-        <form class='text-serif' action='/weeks' method='POST'>
-            <div class='space-around'> Title: <input type='text' name='name'></div>
+<div class='wrapper-fixed'>
+    <div class='page-flex-container'>
 
-            <div>Select an Image:</div>
-            <div class='new-meal-img-grid'>
-                {{#each image}}
-                <div>
-                    <div>
-                        <input type="radio" name="img" value='{{this.src}}'>
-                    </div>
-                    <div><img class='thumbnail' src='{{this.src}}'></div>
-                </div>
-                {{/each}}
+        <div>
+                        <div class='go-back-container'>
+                <a class='go-back' href='/weeks/'>Go Back</a>
             </div>
+            <h1 class='top-padding'>New Week</h1>
             <div>
-            </div>
-    </div>
+                <form class='text-serif' action='/weeks' method='POST'>
+                    <div class='space-around'> Title: <input type='text' name='name'></div>
 
-    <div class='semicircle-bottom'><input class='input' type='submit' value='create'></div>
-    </form>
-</div>
+                    <div>Select an Image
+                        <a class='alt-button' href='./images/new'> OR Add Your Own!</a>
+                    </div>
+                    <div class='new-meal-img-grid'>
+                        {{#each image}}
+                        <div>
+                            <div>
+                                <input type="radio" name="img" value='{{this.src}}'>
+                            </div>
+                            <div><img class='thumbnail' src='{{this.src}}'></div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{!-- <div class='big-cushion'></div> --}}
+
+            </div>
+
+            <div class='semicircle-bottom'><input class='input' type='submit' value='create'></div>
+            </form>
+        </div>
+    </div>
