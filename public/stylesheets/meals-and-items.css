@@ -128,3 +128,13 @@
 .tiny-div {
     border: .5rem solid transparent;
 }
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* DESKTOP */
+    @media only screen and (min-width: 992px) {
+
+    }

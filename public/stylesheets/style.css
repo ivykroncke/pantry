@@ -154,9 +154,8 @@ footer {
   filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
 }
 
-/* ////////////////////////////////////////////////////////////////////////////// */
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* IPADS */
 @media only screen and (min-width: 768px) {
   
   .site-wrapper {
@@ -189,16 +188,36 @@ footer {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+.side-text {
+  font-size: 5rem;
+}
 
+.alt-button {
+  font-size: 2rem;
+  padding: .75rem;
+}
+
+/* DESKTOP */
 @media only screen and (min-width: 992px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
   .site-title {
     font-size: 5rem;
   }
   .cushion {
     display: inline-block;
-    height: 25vh;
+    height: 5vh;
   }
+
+  .week-square-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
   .whatkindofweekisit {
     font-size: 4rem;
   }
