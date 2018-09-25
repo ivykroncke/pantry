@@ -17,8 +17,7 @@ Trello: https://trello.com/b/Zmuoocsd/pantry-app
 GitHub: https://github.com/ivykroncke/pantry
 
 ### ERD
-![erd here]
-(https://github.com/ivykroncke/pantry/blob/master/erd-pantry.jpg)
+![erd here](https://github.com/ivykroncke/pantry/blob/master/erd-pantry.jpg)
 * Weeks can have many meals and meals can have many items.
 * There is also a model for images that can be assigned to week names in the app.
 
@@ -45,4 +44,4 @@ GitHub: https://github.com/ivykroncke/pantry
 ### Other Credits
 
 * Stack Overflow for updating embedded subdocuments help: https://stackoverflow.com/questions/26156687/mongoose-find-update-subdocument
-* Thanks to contributing photographers on Unsplash for free use of their images: 1, 2, 3: https://unsplash.com/
+* Thanks to contributing photographers on Unsplash for free use of their images: Edgar Castrejon, Travis Yewell, ERik Odiin, Alexander Mils, and Joanie Simon: https://unsplash.com/
