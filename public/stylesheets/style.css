@@ -117,8 +117,8 @@ img.week-square {
 }
 
 footer {
-position: relative;
-margin-top: .5rem;
+  position: relative;
+  margin-top: .5rem;
 }
 
 .my-button {
@@ -158,9 +158,30 @@ margin-top: .5rem;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  
+  /* .site-wrapper {
+    height: 100vh;
+  } */
+
+  .semicircle-top {
+    height: 24vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
   .site-title {
     font-size: 7rem;
   }
+
+.week-square-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1.5fr;
+  grid-gap: .25fr;
+  justify-items: center;
+}
+
   .cushion {
     display: inline-block;
     min-height: 5vh;
@@ -168,6 +189,7 @@ margin-top: .5rem;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
   .site-title {
     font-size: 5rem;
