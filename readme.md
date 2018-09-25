@@ -16,11 +16,17 @@ https://radiant-falls-39293.herokuapp.com/
 Trello: https://trello.com/b/Zmuoocsd/pantry-app
 
 ### Wireframes
-![wireframe here](https://github.com/ivykroncke/pantry//Users/ivykroncke/ga/wdi/pantry/wireframe-rough-kroncke-pantry-1.jpg)
-(https://github.com/ivykroncke/pantry//Users/ivykroncke/ga/wdi/pantry//Users/ivykroncke/ga/wdi/pantry/wireframe-rough-kroncke-pantry-2.jpg)
+![wireframe here](https://github.com/ivykroncke/pantry/blob/master/wireframe-rough-kroncke-pantry-1.jpg)
+(https://github.com/ivykroncke/pantry/blob/master/wireframe-rough-kroncke-pantry-2.jpg)
 
-(https://github.com/ivykroncke/pantry//Users/ivykroncke/ga/wdi/pantry//Users/ivykroncke/ga/wdi/pantry/wireframe-routes-kroncke-pantry.jpg)
+(https://github.com/ivykroncke/pantry/blob/master/wireframe-routes-kroncke-pantry.jpg)
 
+
+### Features
+* View a list of weeks by theme with the ability to add custom weeks.
+* Select a week to customize the meals, ingredients, or edit.
+* Create your own week including your choice of image or upload your own custom image!
+* All ingredients from a given week can be loaded to a convenient shopping list page.
 
 ### Other Credits
 
