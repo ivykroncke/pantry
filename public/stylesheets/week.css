@@ -133,7 +133,7 @@
 }
 
 .thumbnail {
-    width: 5rem;
+    width: 10rem;
     height: auto;
 }
 
@@ -178,11 +178,16 @@ a.no-going-back{
 .new-meal-img-grid {
     margin: 1rem 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 1.5fr;
+    grid-gap: .75rem;
     justify-items: center;
     margin-left: 5vh;
     margin-right: 5vh;
+}
+
+.thumbnail {
+    height: 
 }
 
 }

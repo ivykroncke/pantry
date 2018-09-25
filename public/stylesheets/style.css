@@ -105,6 +105,7 @@ img.week-square {
   font-size: 1.15rem;
   color: charcoal;
   margin-bottom: .75rem;
+  margin-top: .25rem;
   text-transform: lowercase;
 }
 
@@ -200,6 +201,9 @@ footer {
   margin-bottom: .75rem;
 }
 
+.my-button {
+  font-size: 2rem;
+}
 }
 
 /* DESKTOP */
