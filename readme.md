@@ -49,3 +49,4 @@ GitHub: https://github.com/ivykroncke/pantry
 
 * Stack Overflow for updating embedded subdocuments help: https://stackoverflow.com/questions/26156687/mongoose-find-update-subdocument
 * Thanks to contributing photographers on Unsplash for free use of their images: Edgar Castrejon, Travis Yewell, ERik Odiin, Alexander Mils, and Joanie Simon: https://unsplash.com/
+* Google Fonts

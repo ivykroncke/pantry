@@ -219,11 +219,14 @@ footer {
   }
   .week-square-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin-left: 5vh;
     margin-right: 5vh;
   }
   .whatkindofweekisit {
     font-size: 4rem;
+  }
+  .my-button {
+    font-size: 2rem;
   }
 }
