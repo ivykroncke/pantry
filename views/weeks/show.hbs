@@ -6,20 +6,21 @@
     </header>
 
     <main class='side-main'>
+
         <div class='go-back-container'>
             <a class='go-back' href='/weeks/'>Back to Main</a>
         </div>
-        <div 'img-list-container'>
-            <div>
-                <img class='meal-image' src='{{week.img}}'>
-            </div>
-            <div class='add-week'>
-                <div><a class='alt-button' href='/weeks/{{week._id}}/meals/new'>Add a Meal</a></div>
-                <div><a class='alt-button' href='/weeks/{{week._id}}/list/'>Shopping List</a></div>
-            </div>
+
+        <div class='img-list-container'>
+            <img class='meal-image' src='{{week.img}}'>
+            <a class='shoppinglist' href='/weeks/{{week._id}}/list/'>
+                <div>View</div>
+                <div>Shopping</div>
+                <div>List</div>
+            </a>
         </div>
 
-        <div >
+        <div>
             {{#each week.meals}}
             <div class='week-meal-list'>
                 <a href='/weeks/{{../week._id}}/meals/{{this._id}}'>
@@ -28,6 +29,10 @@
                 <p class='meal-description'>{{this.description}}</p>
             </div>
             {{/each}}
+        </div>
+
+        <div class='space-around'>
+            <a class='alt-button' href='/weeks/{{week._id}}/meals/new'>Add New Meal</a>
         </div>
 
         <footer class='lil-space'>
