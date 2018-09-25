@@ -58,10 +58,10 @@ main {
   position: relative;
 }
 
-/* .cushion {
+.cushion {
   display: inline-block;
-  height: 1px;
-} */
+  height: 2vh;
+}
 
 .big-cushion {
   display: block;
