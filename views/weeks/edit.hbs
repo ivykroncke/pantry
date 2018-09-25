@@ -1,4 +1,4 @@
-<div class='site-wrapper-change'>
+<div class='wrapper-fixed'>
     <nav>
         <div class='go-back-container'>
             <a class='go-back' href='/weeks/'>Go Back</a>
@@ -7,6 +7,7 @@
 
     <div class='space-around'>
         <h1 class='half-width'>Edit {{week.name}}</h1>
+        <img class='meal-image' src={{week.img}}>
     </div>
 
     <form action='/weeks/{{week._id}}?_method=DELETE' method='POST'>
@@ -16,7 +17,19 @@
     <main>
         <form action='/weeks/{{week._id}}?_method=PUT' method='POST'>
             <div class='space-around'>Name: <input type='text' name='name' value='{{week.name}}'></div>
-            <div class='space-around'>Image: <input type='text' name='img' value='{{week.img}}'></div>
+            <div >Image: <input type='text' name='img' value='{{week.img}}'></div>
+
+                  <div class='new-meal-img-grid'>
+                        {{#each image}}
+                        <div>
+                            <div>
+                                <input type="radio" name="img" value='{{this.src}}'>
+                            </div>
+                            <div><img class='thumbnail' src='{{this.src}}'></div>
+                        </div>
+                        {{/each}}
+                    </div>
+
             <div class='semicircle-bottom'><input class='input' type='submit' value='Update Week'></div>
         </form>
     </main>

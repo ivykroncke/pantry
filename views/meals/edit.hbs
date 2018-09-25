@@ -1,4 +1,4 @@
-<div class='site-wrapper-change'>
+<div class='wrapper-fixed'>
     <nav>
         <div class='go-back-container'>
             <a class='go-back' href='/weeks/{{week._id}}/meals/{{meal._id}}/'>Go Back</a>
@@ -10,9 +10,11 @@
         <h1 class='half-width'>{{meal.name}}</h1>
     </header>
 
-    <div class='edit-fields'>
+    <div class='space-around'>
         <form action='/weeks/{{week._id}}/meals/{{meal._id}}?_method=PUT' method='POST'>
             <div>Name: <input type='text' name='name' value='{{meal.name}}'><input class='dark-submit' type='submit' value='Update'></div>
+            <div class='tiny-div'></div>
+            <div>Description: <input type='text' name='description' value='{{meal.description}}'><input class='dark-submit' type='submit' value='Update'></div>
         </form>
 
         <div class='transparent'>

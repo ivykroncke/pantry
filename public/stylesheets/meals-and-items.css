@@ -112,6 +112,8 @@
 .delete {
     background-color: rgb(160, 5, 36);
     color: white;
+    padding: .5rem;
+    border-radius: .25rem;
 }
 
 .space-around {
@@ -121,5 +123,8 @@
 .formatted-form {
     padding-bottom: 1em;
     text-align: left;
+}
 
+.tiny-div {
+    border: .5rem solid transparent;
 }
