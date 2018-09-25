@@ -1,19 +1,25 @@
-<div class='site-wrapper-change'>
+<div class='wrapper-fixed'>
     <nav>
         <div class='go-back-container'>
             <a class='go-back' href='/weeks/new'>Go Back</a>
         </div>
     </nav>
 
-            <h1>Upload a New Meal Image</h1>
-            <div class='text-pretty'>All Images will be Cropped To Square.</div>
-        <form action='/weeks/images/' method='POST'>
-            <div class='text'>Paste URL: </div>
+    <h1 class='top-padding'>Upload Your Own</h1>
+    <h1>Custom Week Image</h1>
+    <img class='meal-image' src='/images/burger.jpg'/>
+    <div class='space-around'>
+        <div class='text-pretty'>Paste a URL to an image that describes the meals in your week.
+            <div class='text-pretty'>All Images will be Cropped To
+                Square.</div>
+        </div>
+        <form class = 'top-padding'action='/weeks/images/' method='POST'>
+            <div class='text'>Paste URL here: </div>
             <br>
-                <div><input type='text' name='src'></div>
+            <div><input type='text' name='src'></div>
             <div class='semicircle-bottom'>
                 <div><input class='input' type='submit' value='Create New Meal'></div>
             </div>
         </form>
 
-</div>
+    </div>
