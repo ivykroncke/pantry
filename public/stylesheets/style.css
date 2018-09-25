@@ -103,7 +103,8 @@ h1 {
 
 img.week-square {
   width: 10rem;
-  height: auto;
+  height: 10rem;
+  overflow: hidden;
 }
 
 .text {

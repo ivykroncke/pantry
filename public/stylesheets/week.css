@@ -58,7 +58,8 @@
 .meal-image {
     border-radius: .25rem;
     height: 8rem;
-    width: auto;
+    width: 8rem;
+    overflow: hidden;
     border: .5rem solid rgba(47, 79, 79, 0.3);
 }
 
@@ -152,7 +153,8 @@
     }
     .meal-image {
         height: 25vh;
-        width: auto;
+        width: 25vh;
+        overflow: hidden;
     }
     .shoppinglist {
         font-size: 2rem;
