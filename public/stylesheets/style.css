@@ -161,6 +161,7 @@ footer {
 }
 
 /* IPADS */
+
 @media only screen and (min-width: 768px) {
   .site-wrapper {
     height: 100vh;
@@ -185,33 +186,25 @@ footer {
     display: inline-block;
     min-height: 5vh;
   }
-
-.side-text {
-  font-size: 5rem;
+  .side-text {
+    font-size: 5rem;
+  }
+  .alt-button {
+    font-size: 2rem;
+    padding: .75rem;
+  }
+  .text {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+  }
+  .text-serif {
+    font-size: 2rem;
+    margin-bottom: .75rem;
+  }
+  .my-button {
+    font-size: 2rem;
+  }
 }
-
-.alt-button {
-  font-size: 2rem;
-  padding: .75rem;
-}
-
-.text {
-  font-size: 1.5rem;
-  margin-bottom: .75rem;
-}
-
-.text-serif {
-  font-size: 2rem;
-  margin-bottom: .75rem;
-}
-
-.my-button {
-  font-size: 2rem;
-}
-
-}
-
-/* DESKTOP */
 
 @media only screen and (min-width: 992px) {
   h1 {

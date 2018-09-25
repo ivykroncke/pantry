@@ -36,7 +36,7 @@
     text-align: right;
     margin: 1rem 1rem 1rem 0;
     top: 0;
-    right:0;
+    right: 0;
 }
 
 .go-back {
@@ -76,7 +76,6 @@
     color: white;
     background: rgba(47, 79, 79, 0.5)
 }
-
 
 .semicircle-bottom {
     width: 100%;
@@ -129,31 +128,20 @@
     border: .5rem solid transparent;
 }
 
-/* IPAD */
 @media only screen and (min-width: 768px) {
-
-.wrapper-fixed {
-    height: 100vh;
-}
-    .go-back {
-        font-size: 2rem; 
-}
-
-.input {
-    font-size: 3rem;
-}
-
-.form {
-    font-size: 1.5rem;
-}
-
-.delete {
-    font-size: 1.5rem;
-}
-
-}
-
-/* DESKTOP */
-    @media only screen and (min-width: 992px) {
-
+    .wrapper-fixed {
+        height: 100vh;
     }
+    .go-back {
+        font-size: 2rem;
+    }
+    .input {
+        font-size: 3rem;
+    }
+    .form {
+        font-size: 1.5rem;
+    }
+    .delete {
+        font-size: 1.5rem;
+    }
+}

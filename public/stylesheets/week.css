@@ -62,7 +62,6 @@
     border: .5rem solid rgba(47, 79, 79, 0.3);
 }
 
-
 .my-button {
     font-family: 'Source Serif Pro';
     margin-top: 2vh;
@@ -76,8 +75,7 @@
     justify-content: center;
     border-radius: .25em;
     filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
-  }
-  
+}
 
 .shoppinglist {
     font-family: 'Source Serif Pro';
@@ -141,62 +139,50 @@
     overflow: auto;
 }
 
-/* IPADS */
 @media only screen and (min-width: 768px) {
-.side-text {
-    font-size: 3rem;
-  }
-
-.go-back-container{
-    margin-top: 3rem;
+    .side-text {
+        font-size: 3rem;
+    }
+    .go-back-container {
+        margin-top: 3rem;
+    }
+    a.no-going-back {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .meal-image {
+        height: 25vh;
+        width: auto;
+    }
+    .shoppinglist {
+        font-size: 2rem;
+        text-align: left;
+        align-self: center;
+        margin: 0 2rem 0 1rem;
+        padding: 1rem;
+        border-radius: .25em;
+        filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
+    }
+    .meal-title {
+        font-size: 3rem;
+        padding-right: 1rem;
+    }
+    .meal-description {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+    .new-meal-img-grid {
+        margin: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 1.5fr;
+        grid-gap: .75rem;
+        justify-items: center;
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    .thumbnail {
+        width: 10rem;
+        height: auto;
+    }
 }
-
-a.no-going-back{
-    font-size: 2rem;
-    margin-top: 3rem;
-}
-
-.meal-image {
-    height: 25vh;
-    width: auto;
-}
-
-.shoppinglist {
-    font-size: 2rem;
-    text-align: left;
-    align-self: center;
-    margin: 0 2rem 0 1rem;
-    padding: 1rem;
-    border-radius: .25em;
-    filter: drop-shadow(.5rem .5rem 1rem rgba(65, 48, 42, 0.3));
-}
-
-.meal-title {
-    font-size: 3rem;
-    padding-right: 1rem;
-}
-
-.meal-description {
-    font-size: 1.5rem;
-    padding-right: 1rem;
-}
-.new-meal-img-grid {
-    margin: 1rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr;
-    grid-gap: .75rem;
-    justify-items: center;
-    margin-left: 5vh;
-    margin-right: 5vh;
-}
-
-.thumbnail {
-    width: 10rem;
-    height: auto;
-}
-
-}
-
-/* DESKTOP */
-@media only screen and (min-width: 992px) {

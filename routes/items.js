@@ -26,13 +26,9 @@ router.post('/', (req, res) => {
 })
 
 router.delete('/:id', (req, res) => {
-    //find the Week that we want to pull Data from
     Week.findById(req.params.weeksId)
-    //using the data that is returned that is only THIS week
     .then(week => {
         const meal = week.meals.id(req.params.mealsId)
-        //take the array inside the array by the id in the URL
-        //and remove it
         meal.items.id(req.params.id).remove()
         return week.save()
     })
