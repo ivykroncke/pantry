@@ -27,6 +27,13 @@ Trello: https://trello.com/b/Zmuoocsd/pantry-app
 * Select a week to customize the meals, ingredients, or edit.
 * Create your own week including your choice of image or upload your own custom image!
 * All ingredients from a given week can be loaded to a convenient shopping list page.
+* Mobile-first design is also handsome on larger displays.
+
+
+### Future Development
+* Creating a log in for individual users.
+* Upload form for individual meal images.
+* Added javascript, css animations for more playful user experience.
 
 ### Other Credits
 
