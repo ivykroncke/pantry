@@ -17,9 +17,10 @@ Trello: https://trello.com/b/Zmuoocsd/pantry-app
 
 ### Wireframes
 ![wireframe here](https://github.com/ivykroncke/pantry/blob/master/wireframe-rough-kroncke-pantry-1.jpg)
-(https://github.com/ivykroncke/pantry/blob/master/wireframe-rough-kroncke-pantry-2.jpg)
 
-(https://github.com/ivykroncke/pantry/blob/master/wireframe-routes-kroncke-pantry.jpg)
+![wireframe here](https://github.com/ivykroncke/pantry/blob/master/wireframe-rough-kroncke-pantry-2.jpg)
+
+![wireframe here](https://github.com/ivykroncke/pantry/blob/master/wireframe-routes-kroncke-pantry.jpg)
 
 
 ### Features
