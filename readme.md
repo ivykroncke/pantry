@@ -14,6 +14,7 @@ https://radiant-falls-39293.herokuapp.com/
 ### Planning
 
 Trello: https://trello.com/b/Zmuoocsd/pantry-app
+GitHub: https://github.com/ivykroncke/pantry
 
 ### ERD
 ![erd here]

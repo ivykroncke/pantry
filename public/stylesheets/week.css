@@ -133,13 +133,16 @@
 }
 
 .thumbnail {
-    width: 10rem;
-    height: auto;
+    width: 5rem;
+    height: 5rem;
+}
+
+.overflow {
+    overflow: auto;
 }
 
 /* IPADS */
 @media only screen and (min-width: 768px) {
-
 .side-text {
     font-size: 3rem;
   }
@@ -170,10 +173,12 @@ a.no-going-back{
 
 .meal-title {
     font-size: 3rem;
+    padding-right: 1rem;
 }
 
 .meal-description {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    padding-right: 1rem;
 }
 .new-meal-img-grid {
     margin: 1rem 2rem;
@@ -187,7 +192,8 @@ a.no-going-back{
 }
 
 .thumbnail {
-    height: 
+    width: 10rem;
+    height: auto;
 }
 
 }

@@ -156,7 +156,6 @@ footer {
 }
 
 /* IPADS */
-
 @media only screen and (min-width: 768px) {
   .site-wrapper {
     height: 100vh;
@@ -192,7 +191,7 @@ footer {
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: .75rem;
 }
 
@@ -204,6 +203,7 @@ footer {
 .my-button {
   font-size: 2rem;
 }
+
 }
 
 /* DESKTOP */

@@ -131,6 +131,10 @@
 
 /* IPAD */
 @media only screen and (min-width: 768px) {
+
+.wrapper-fixed {
+    height: 100vh;
+}
     .go-back {
         font-size: 2rem; 
 }
