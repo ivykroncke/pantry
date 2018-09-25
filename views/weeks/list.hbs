@@ -1,22 +1,21 @@
-<div class='site-wrapper-change'>
+<div class='wrapper-fixed'>
 
-<nav>
-    <div class='go-back-container'>
-        <a class='go-back' href='/weeks/{{week._id}}/'>Go Back</a>
+    <nav>
+        <div class='go-back-container'>
+            <a class='go-back' href='/weeks/{{week._id}}/'>Go Back</a>
+        </div>
+    </nav>
+
+    <header>
+        <img class='meal-image' src='{{week.img}}'>
+        <h1>{{week.name}}</h1>
+        <div class='text-serif'>Shopping List</div>
+    </header>
+
+    <div class='transparent'>
+        {{#each entries}}
+            <p class='text'>{{0}}:{{1}}</p>
+        {{/each}}
     </div>
-</nav>
-
-<header>
-    <img class='meal-image' src='{{week.img}}'>
-    <h1>{{week.name}}</h1>
-    <div class='space-around'>Shopping List</div>
-</header>
-
-<content class='transparent'>
-    {{#each entries}}
-    <p>{{0}}:{{1}}</p>
-    {{/each}}
-</content>
-
 
 </div>
