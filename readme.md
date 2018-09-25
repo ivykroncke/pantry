@@ -16,8 +16,7 @@ https://radiant-falls-39293.herokuapp.com/
 Trello: https://trello.com/b/Zmuoocsd/pantry-app
 
 ### ERD
-![erd here]
-(https://github.com/ivykroncke/pantry/blob/master/erd-pantry.jpg)
+![erd here](https://github.com/ivykroncke/pantry/blob/master/erd-pantry.jpg)
 * Weeks can have many meals and meals can have many items.
 * There is also a model for images that can be assigned to week names in the app.
 
