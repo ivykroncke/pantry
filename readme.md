@@ -10,7 +10,8 @@ https://radiant-falls-39293.herokuapp.com/
 
 ### Technologies Used:
 * HTML5, CSS3
-* Express, MongoDB, and Mongoose
+* Express, Handlebars, MongoDB, and Mongoose
+* Haroku, Git Hub
 * Compass, VS Code, and Postman
 
 ### Planning
